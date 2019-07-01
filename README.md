@@ -1,4 +1,4 @@
-# Form-Data [![NPM Module](https://img.shields.io/npm/v/form-data.svg)](https://www.npmjs.com/package/form-data) [![Join the chat at https://gitter.im/form-data/form-data](http://form-data.github.io/images/gitterbadge.svg)](https://gitter.im/form-data/form-data)
+# Form-Data 
 
 A library to create readable ```"multipart/form-data"``` streams. Can be used to submit forms and file uploads to other web applications.
 
@@ -6,17 +6,12 @@ The API of this library is inspired by the [XMLHttpRequest-2 FormData Interface]
 
 [xhr2-fd]: http://dev.w3.org/2006/webapi/XMLHttpRequest-2/Overview.html#the-formdata-interface
 
-[![Linux Build](https://img.shields.io/travis/form-data/form-data/master.svg?label=linux:4.x-12.x)](https://travis-ci.org/form-data/form-data)
-[![MacOS Build](https://img.shields.io/travis/form-data/form-data/master.svg?label=macos:4.x-12.x)](https://travis-ci.org/form-data/form-data)
-[![Windows Build](https://img.shields.io/travis/form-data/form-data/master.svg?label=windows:4.x-12.x)](https://travis-ci.org/form-data/form-data)
-
-[![Coverage Status](https://img.shields.io/coveralls/form-data/form-data/master.svg?label=code+coverage)](https://coveralls.io/github/form-data/form-data?branch=master)
 [![Dependency Status](https://img.shields.io/david/form-data/form-data.svg)](https://david-dm.org/form-data/form-data)
 
 ## Install
 
 ```
-npm install --save form-data
+npm install --save @neuralegion/form-data
 ```
 
 ## Usage
