@@ -1,11 +1,11 @@
 {
-  "author": "Felix Geisendörfer <felix@debuggable.com> (http://debuggable.com/)",
-  "name": "form-data",
+  "author": "Artem Derevnjuk <artem.derevnjuk@neuralegion.com>",
+  "name": "@neuralegion/form-data",
   "description": "A library to create readable \"multipart/form-data\" streams. Can be used to submit forms and file uploads to other web applications.",
-  "version": "2.4.0",
+  "version": "2.5.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/form-data/form-data.git"
+    "url": "git://github.com/NeuraLegion/form-data.git"
   },
   "main": "./lib/form_data",
   "browser": "./lib/browser",
@@ -35,7 +35,7 @@
     "check"
   ],
   "engines": {
-    "node": ">= 0.12"
+    "node": ">= 4"
   },
   "dependencies": {
     "asynckit": "^0.4.0",

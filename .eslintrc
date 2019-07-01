@@ -1,30 +1,70 @@
 {
   "rules": {
-    "indent": [2, 2, {"SwitchCase": 1}],
-    "quotes": [2, "single"],
-    "linebreak-style": [2, "unix"],
-    "semi": [2, "always"],
-    "curly": [2, "multi-line"],
-    "handle-callback-err": [2, "^err"],
-    "valid-jsdoc": [2, {
-      "requireReturn": false,
-      "requireReturnDescription": false,
-      "prefer": {
-        "return": "returns"
+    "indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1
       }
-    }],
-    "require-jsdoc": [2, {
-      "require": {
-        "FunctionDeclaration": true
+    ],
+    "quotes": [
+      2,
+      "single"
+    ],
+    "linebreak-style": [
+      2,
+      "unix"
+    ],
+    "semi": [
+      2,
+      "always"
+    ],
+    "curly": [
+      2,
+      "multi-line"
+    ],
+    "handle-callback-err": [
+      2,
+      "^err"
+    ],
+    "valid-jsdoc": [
+      2,
+      {
+        "requireReturn": false,
+        "requireReturnDescription": false,
+        "prefer": {
+          "return": "returns"
+        }
       }
-    }],
-    "no-redeclare": [2, { "builtinGlobals": true }],
-    "no-shadow": [2, { "builtinGlobals": true, "hoist": "all" }],
-    "no-use-before-define": [2, "nofunc"],
+    ],
+    "require-jsdoc": [
+      2,
+      {
+        "require": {
+          "FunctionDeclaration": true
+        }
+      }
+    ],
+    "no-redeclare": [
+      2,
+      {
+        "builtinGlobals": true
+      }
+    ],
+    "no-shadow": [
+      2,
+      {
+        "builtinGlobals": true,
+        "hoist": "all"
+      }
+    ],
+    "no-use-before-define": [
+      2,
+      "nofunc"
+    ],
     "no-shadow-restricted-names": 2,
     "no-extra-semi": 2,
     "no-unused-vars": 2,
-    "no-undef": 2,
     "no-irregular-whitespace": 2,
     "no-console": 2,
     "key-spacing": 0,
@@ -38,6 +78,7 @@
     "no-mixed-requires": 0
   },
   "env": {
-    "node": true
+    "node": true,
+    "es6": true
   }
 }
