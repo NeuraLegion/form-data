@@ -17,7 +17,7 @@ var myFile = function() { return fs.createReadStream(fileName); };
 var numItems = 5;
 
 // Make request to use our FormData
-request.prototype.form = function (form) {
+function formFactory(form) {
   var self = this;
   if (form) {
     if (!/^application\/x-www-form-urlencoded\b/.test(self.getHeader('content-type'))) {
@@ -36,7 +36,7 @@ request.prototype.form = function (form) {
     self.abort();
   });
   return self._form;
-};
+}
 
 var server = http.createServer(function(req, res) {
 
@@ -64,10 +64,12 @@ server.listen(common.port, function() {
     server.close();
   });
 
-  var form = r.form();
+  var form = formFactory.call(r);
+
+  assert.strictEqual(form instanceof FormData, true)
 
   for (var i = 0; i < numItems; i++) {
-    form.append('file_' + i, myFile());
+    form.append('file', myFile());
   }
 
   // get upload size
